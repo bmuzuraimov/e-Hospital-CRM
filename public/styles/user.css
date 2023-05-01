@@ -1,0 +1,64 @@
+.admin-wrapper{
+	width: 100%;
+	display: flex;
+	height: calc(100% - 66px);
+}
+.admin-wrapper .left-sidebar{
+	flex:2;
+	float: left;
+	height: 100%;
+	background: #234a57;
+}
+.admin-wrapper .left-sidebar ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	color:aliceblue;
+}
+.admin-wrapper .left-sidebar ul li a{
+	padding: 18px;
+	display: block;
+	border-bottom: 1px solid #004044;
+}
+.admin-wrapper .left-sidebar ul li a:hover{
+	background: #004044;
+}
+.admin-wrapper .admin-content{
+	flex:8;
+	height: 100%;
+	padding: 40px 50px 100px;
+	overflow-y:scroll; 
+}
+.admin-content .page-title{
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.admin-content table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.1rem;
+}
+.admin-content table th, .admin-content table td{
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #d3d3d3;
+}
+.edit{
+	color: green;
+}
+.delete{
+	color: red;
+}
+.publish{
+	color:blue;
+}
+.edit:hover,.delete:hover,.publish:hover{
+	text-decoration: underline;
+}
+
+form div{
+	margin-bottom: 15px;
+}
+form .submit{
+	text-align: center;
+}

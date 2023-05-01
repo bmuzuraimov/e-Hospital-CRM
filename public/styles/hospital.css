@@ -1,0 +1,167 @@
+.hospital-wrapper{
+	width: 100%;
+	display: flex;
+	height: calc(100% - 66px);
+}
+.hospital-wrapper .left-sidebar{
+	flex:2;
+	float: left;
+	height: 100%;
+	background: #00888c;
+}
+.hospital-wrapper .left-sidebar ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	color:aliceblue;
+}
+.hospital-wrapper .left-sidebar ul li a{
+	padding: 18px;
+	display: block;
+	border-bottom: 1px solid #006669;
+}
+.hospital-wrapper .left-sidebar ul li a:hover{
+	background: #006669;
+}
+.hospital-wrapper .hospital-content{
+	flex:8;
+	height: 100%;
+	/*padding: 10px 40px 50px;*/
+	overflow-y:scroll; 
+}
+.hospital-content .page-title{
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+.hospital-content table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 1.1rem;
+}
+.hospital-wrapper .hospital-content .btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    background: #00888c;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
+}
+.hospital-wrapper .hospital-content .btn:hover {
+    color: white !important;
+    background: #006669;
+}
+.hospital-wrapper .hospital-content .menu button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: #00888c;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+}
+.hospital-wrapper .hospital-content .menu button:hover {
+    background-color: #006669;
+}
+.animated-submit{
+    text-align: center;
+}
+.animated-submit button[type=submit]{
+    box-shadow: 0 4px #9dbdbc;
+}
+.animated-submit button[type=submit]:active{
+    box-shadow: 0 2px #799191;
+    transform: translateY(2px);
+    transition: 0.5s;
+}
+.hospital-content table th, .hospital-content table td{
+	padding: 15px;
+	text-align: left;
+	border-bottom: 1px solid #d3d3d3;
+}
+.hospital-content .content .info, .hospital-content .content .extra-info {
+    margin-bottom: 25px;
+}
+.hospital-content .content .info h3, .hospital-content .content .extra-info h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.hospital-content .content .info-data, .hospital-content .content .extra-info-data {
+    display: flex;
+    justify-content: space-between;
+}
+.hospital-content .content .info-data .data, .hospital-content .content .extra-info-data .data {
+    width: 45%;
+}
+.hospital-content .content .info-data .data h4, .hospital-content .content .extra-info-data .data h4{
+    font-size: 1.2em;
+    color: #353c4e;
+    margin-bottom: 5px;
+} 
+.hospital-content .content .info-data .data p, .hospital-content .content .extra-info-data .data p{
+    font-size: 1.2em;
+    margin: 0px 0px 10px 10px;
+    color: #6a6c6e;
+} 
+.edit{
+	color: green;
+}
+.delete{
+	color: red;
+}
+.publish{
+	color:blue;
+}
+.edit:hover,.delete:hover,.publish:hover{
+	text-decoration: underline;
+}
+
+form div{
+	margin-bottom: 15px;
+}
+form .submit{
+	text-align: center;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 900px) {
+    .hospital-wrapper{
+        width: 100%;
+        display: block;
+    }
+    .hospital-wrapper .hospital-content{
+        width: 100%;
+    }
+    .hospital-wrapper .left-sidebar{
+        width: 100%;
+        height: auto;
+    }
+    .hospital-content .content .info-data, .hospital-content .content .extra-info-data {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .hospital-content .content .info-data .data, .hospital-content .content .extra-info-data .data {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px) {
+	.hospital-wrapper .hospital-content{
+		padding: 0px 10px;
+	}
+    .hospital-content .content .info-data, .hospital-content .content .extra-info-data {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .hospital-content .content .info-data .data, .hospital-content .content .extra-info-data .data {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,208 @@
+.cards .unit {
+    box-shadow: 0 0 10px #999999;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;   
+}
+.occupied-unit:hover {
+    box-shadow: 0 0 11px #999999;
+    border: 1px solid transparent;
+}
+.cards .unit h3 {
+    font-family: 'Lora', serif;
+    font-size: 24px;
+    color: #4f4f4f;
+}
+.occupied-unit .patient a{
+    outline: 0;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    text-align: center;
+    color: #141414;
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+    font-weight: 500;    
+}
+.occupied-unit a:not(.patient-name){
+    text-decoration: none;
+    border: 2px solid #dce0e6;
+    border-style: outset;
+    outline: 0;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 5px;
+    width: 30%;
+    padding: 8px 3px 8px 3px;
+    float: left;
+    display: inline-block;
+    bottom: 0;
+}
+.patient-graph {
+    display: none;
+}
+.empty-unit{
+    text-align: center;
+}
+.patient{
+    text-align: center;
+}
+.patient>p, .graphic>p {
+    opacity: 0.8;
+    margin: 5px 0 10px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.graph-btn {
+    background-color: #9aa667;
+    color: white;
+}
+.delete-btn {
+    background-color: #ff5959;
+    color: white;
+}
+.que-btn {
+    background-color: #0050d1;
+    color: white;
+}
+.occupied-unit a:hover, .occupied-unit button:hover {
+    opacity: 0.9;
+}
+.que-dropdown {
+    position: relative;
+    display: block;
+}
+.que-list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    border-radius: 0 0 5px 5px;
+    width: 275px;
+    z-index: 1;
+}
+.que-list a {
+    padding: 5px 0 5px 0;
+    background-color: #edcece;
+    width: 100%;
+    color: black;
+}
+.que-list a.no-que {
+    padding: 5px 0 5px 0;
+    background-color: #ededed;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+.que-dropdown:hover .que-list {
+    display: block;
+}
+.empty-unit>p, .empty-unit>a {
+    opacity: 0.8;
+    margin: 5px 0 10px;
+    font-size: 18px;
+    font-family: 'Lora', serif;
+}
+.available-name {
+    outline: 0;
+    border: none;
+    text-align: center;
+    background-color: inherit;
+    color: #f09400;
+    font-size: 22px;
+    font-family: 'PT Serif', serif;
+}
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.add-dropdown input[type=number] {
+    width: 50%;
+    font-size: 18px;
+    padding: 6px 0 6px 0;
+    font-weight: bold;
+    color: #4a536e;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px 0 2px 2px solid #383838;
+    border-radius: 3px 0 0 3px;
+    transition: 1s;
+}
+.add-dropdown input[type=number]:focus {
+    width: 80%;
+    border: 1px solid #47d6b9;
+    transition: 1s;
+}
+.add-dropdown input::-webkit-outer-spin-button, .add-dropdown input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.form-inline .list {
+    border: none;
+    outline: 0;
+    color: black;
+    background: rgba(255, 217, 112, 0.5);
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    width: 80%;
+    height: 40px;
+    padding: 8px 0 8px 0;
+    bottom: 0;
+}
+.form-inline .list:hover {
+    background-color: #8c6700;
+    opacity: 0.9;
+    color: white;
+    transition: .3s;
+}
+.add-dropdown {
+    margin-top: 15px;
+    position: relative;
+    display: block;
+}
+.add-list {
+    display: none;
+    position: absolute;
+    top: 25px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    left: 30px;
+    border-radius: 0 0 5px 5px;
+    width: 275px;
+    height: 240px;
+    overflow-y: scroll;
+    z-index: 1;
+}
+.add-list .no-que {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    outline: 0;
+    color: black;
+    background: #ccc;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    width: 80%;
+    height: 30px;
+    padding: 5px 5px;
+    bottom: 0;
+}
+.add-list .no-que:hover {
+    background-color: #9e9e9e;
+    opacity: 0.9;
+    color: white;
+    transition: .3s;
+}
+.add-list::-webkit-scrollbar {
+    width: 0px;
+}
+.add-dropdown:hover .add-list {
+    display: block;
+}

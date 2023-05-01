@@ -1,0 +1,52 @@
+<div class="footer">
+	<div class="footer-content">
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>B</span>aiel-<span>A</span>I</h1>
+			<p>Вся сила в единстве</p>
+			<div class="contact">
+				<span><i class="fas fa-phone"></i>&nbsp;<a href="tel:0773748984">0773748984</a></span>
+				<span><i class="fas fa-envelope"></i>&nbsp;<a href = "mailto: muzuraimov02@mail.ru">muzuraimov02@mail.ru</a></span>
+			</div>
+			<div class="socials">
+				<a href="https://www.facebook.com/profile.php?id=100014871363706" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/bmuzuraimov" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://wa.me/996773748984" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			</div>
+		</div>
+		<div class="footer-section links">
+			<h2>Cсылки</h2><br>
+			<ul>
+				<a href="/article?id=18">
+					<li>Обо мне</li>
+				</a>
+				<a href="/donation">
+					<li>Поддержка</li>
+				</a>
+				<a href="/donators">
+					<li>Доноры</li>
+				</a>
+				<a href="/complaints">
+					<li>Жалобы и предложения</li>
+				</a>
+				<a href="/agreement">
+					<li>Условия соглашения</li>
+				</a>
+			</ul>
+		</div>
+		<div class="footer-section contact-form">
+			<h2>Прямая связь</h2><br>
+			<span id="msg"></span>
+			<form action="/sendfeedback" method="post" class="contact-form" id="feedback-form">
+				<input type="phone" name="phone" class="text-input contact-input" placeholder="077XXXXXXX" required>
+				<textarea rows="4" name="message" class="text-input contact-input" placeholder="Отправьте сообщение" required></textarea>
+				<button id="feedback-btn" class="btn btn-big contact-btn">
+					<i class="fas fa-envelope"></i>
+					Отправить
+				</button>
+			</form>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		&copy; <?php echo date("Y"); ?> Baiel-Ai все права защищены
+	</div>
+</div>

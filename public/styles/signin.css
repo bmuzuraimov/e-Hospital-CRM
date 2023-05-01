@@ -1,0 +1,59 @@
+.btn {
+	background: #0000;\
+    outline:none; 
+    border: 2px solid #d5d7db;
+    border-radius: 10px;
+}
+.btn:hover {
+    background: #E8F0FE;
+    transition: 0.5s;
+}
+.sign-in {
+    width: 30%;
+}
+.sign-up {
+    width: 50%;
+}
+.auth-content {
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+.auth-content .form-title {
+    text-align: center;
+}
+.auth-content form div {
+    margin-bottom: 10px;
+}
+.auth-content form p {
+    text-align: center;
+}
+.auth-content form p a {
+    text-decoration: underline;
+}
+.animated-submit{
+    text-align: center;
+}
+.animated-submit button[type=submit]{
+    box-shadow: 0 1px #d5d7db;
+}
+.animated-submit button[type=submit]:active{
+    box-shadow: 0 1px #bcbec2;
+    transform: translateY(2px);
+    transition: 0.5s;
+}
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 900px) {
+    .sign-up, .sign-in {
+        margin: 70px auto;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .sign-up, .sign-in {
+        margin: 80px auto;
+        width: 90%;
+    }
+}
